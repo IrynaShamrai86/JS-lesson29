@@ -1,50 +1,34 @@
-// let carModel = 'Volkswagen';
-// let category = 'Golf';
-// let fuel = 'Disel';
-// let color = 'White';
-//
-// console.log(carModel,category,fuel,color);
+let a = 0.1;
+let b = 0.2;
+let result = a + b;
 
 
-// let carModel = prompt('Яка марка авто?');
-// let category = prompt('Яка модель авто?');
-// let fuel = prompt('Який тип палива?');
-// let color = prompt('Якого кольору авто?');
-//
-// console.log(carModel,category,fuel,color);
+let c = "1";
+let d = 2;
+console.log(d+Number(c));
+alert(c+d.toString());
 
 
-/*
-
- */
-
-
-// let name = prompt('Як тебе звати?');
-// alert(`Привіт, ${name}!`);
-//
-// let year = prompt('Рік твого народження?');
-// const currentYear = 2022;
-// console.log(currentYear - year);
-//
-// let side = prompt('Яка довжина сторони квадрата?');
-// console.log(side * 4);
+let amount = prompt('Який обсяг флешки в Гб?');
+let file = 820;
+const gigabyte = 1024;
+console.log(Math.trunc(amount * gigabyte / file));
 
 
-let radius = prompt('Який радіус кола?');
-console.log(2 * 3.14 * radius);
+let amount = prompt('Яка у вас сума грошей?');
+let price = prompt('Яка ціна однієї шоколадки?');
+console.log(Math.trunc(amount / price));
+console.log(amount % price);
 
 
-let distance = prompt('Яка відстань між точками А та Б в кілометрах?');
-let time = prompt('За скільки годин ти плануєш дістатися точки Б?');
-console.log(distance / time);
+let amount = prompt('Яку суму ви б хотіли покласти на депозит?');
+let time = 2;
+let percent = 0.05;
+console.log(amount * percent * time)
 
 
-let $ = prompt('У мене є така сума $');
-const exchangeRateUSD = 36.5686;
-const exchangeRateEUR = 37.7681;
-console.log(exchangeRateUSD / exchangeRateEUR * $);
-
-
-let $ = prompt('У мене є така сума $');
-const exchangeRate$ = 36.5686;
-console.log(exchangeRate$ * $);
+let amount = prompt('Яку суму ви б хотіли покласти на депозит?');
+let percent = 0.05;
+let monthFirst = amount * percent;
+let monthSecond = ( amount + monthFirst ) * percent;
+console.log(monthFirst + monthSecond);
